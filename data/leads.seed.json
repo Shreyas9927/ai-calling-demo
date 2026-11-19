@@ -1,0 +1,105 @@
+[
+  {
+    "id": "L001",
+    "name": "Rahul Sharma",
+    "phone": "+91 98450 11223",
+    "source": "99acres",
+    "enquiry": "Interested in 2BHK in Whitefield",
+    "minutesAgo": 4
+  },
+  {
+    "id": "L002",
+    "name": "Ananya Rao",
+    "phone": "+91 99001 44556",
+    "source": "Meta lead ad",
+    "enquiry": "Looking for a villa, asked for brochure",
+    "minutesAgo": 26
+  },
+  {
+    "id": "L003",
+    "name": "Mohammed Irfan",
+    "phone": "+91 97411 77889",
+    "source": "Website form",
+    "enquiry": "Plots near airport",
+    "minutesAgo": 55
+  },
+  {
+    "id": "L004",
+    "name": "Kavya Gowda",
+    "phone": "+91 96860 22334",
+    "source": "MagicBricks",
+    "enquiry": "1BHK for investment, Electronic City",
+    "minutesAgo": 130
+  },
+  {
+    "id": "L005",
+    "name": "Arjun Menon",
+    "phone": "+91 90080 55667",
+    "source": "Google ads",
+    "enquiry": "3BHK ready to move, south Bangalore",
+    "minutesAgo": 210
+  },
+  {
+    "id": "L006",
+    "name": "Sneha Kulkarni",
+    "phone": "+91 98860 99001",
+    "source": "Housing.com",
+    "enquiry": "Budget flat near Sarjapur",
+    "status": "Not interested",
+    "score": 5,
+    "tier": "Cold",
+    "qualification": {
+      "interestLevel": "not_interested",
+      "notes": "Already bought elsewhere last month"
+    },
+    "summary": "Lead said they already purchased a flat elsewhere. Marked not interested.",
+    "calls": [
+      {
+        "mode": "ai",
+        "endedReason": "customer-ended-call",
+        "durationSec": 48,
+        "minutesAgo": 1499
+      }
+    ],
+    "minutesAgo": 1500
+  },
+  {
+    "id": "L007",
+    "name": "Vikram Reddy",
+    "phone": "+91 97390 33445",
+    "source": "Meta lead ad",
+    "enquiry": "2BHK Sarjapur Road",
+    "status": "Site visit booked",
+    "score": 92,
+    "tier": "Hot",
+    "qualification": {
+      "budgetLakhs": 80,
+      "budgetText": "75 to 80 lakhs",
+      "location": "Sarjapur Road",
+      "propertyType": "apartment",
+      "bhk": 2,
+      "timeline": "within 3 months",
+      "timelineMonths": 3,
+      "purpose": "self-use",
+      "loanNeeded": true,
+      "interestLevel": "hot",
+      "notes": "Works at Wipro, wants lake view"
+    },
+    "siteVisit": {
+      "propertyId": "P103",
+      "project": "Lakeview Heights",
+      "date": "Sunday 22 Nov",
+      "timeSlot": "11:00 AM"
+    },
+    "summary": "Wants a 2BHK on Sarjapur Road for self-use, budget 75-80L, buying within 3 months, needs a home loan. Site visit booked at Lakeview Heights.",
+    "calls": [
+      {
+        "mode": "ai",
+        "endedReason": "assistant-ended-call",
+        "durationSec": 186,
+        "minutesAgo": 1699
+      }
+    ],
+    "minutesAgo": 1700
+  }
+]

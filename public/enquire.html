@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prime Nest Realty · Find your home in Bangalore</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%231f5f4a%22/></svg>" />
+  <link rel="stylesheet" href="/styles-enquire.css" />
+</head>
+<body>
+  <header class="bar">
+    <div class="brand"><div class="logo">PN</div><span id="firm">Prime Nest Realty</span></div>
+    <span class="tag">Property consultants · Bangalore</span>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>Find your home in Bangalore</h1>
+      <p>Tell us what you're looking for. Our assistant will call you within a minute with matching options, and can book a site visit for you.</p>
+      <div class="listings" id="listings"></div>
+    </section>
+
+    <section class="card" id="formCard">
+      <h2>Enquire now</h2>
+      <form id="form" novalidate>
+        <label>Your name<input name="name" autocomplete="name" required placeholder="Full name" /></label>
+        <label>Mobile number<input name="phone" type="tel" autocomplete="tel" required placeholder="+91 9xxxx xxxxx" /></label>
+        <div class="row">
+          <label>Preferred area
+            <select name="location">
+              <option value="">Not sure yet</option>
+              <option>Whitefield</option><option>Sarjapur Road</option><option>Electronic City</option>
+              <option>Hebbal</option><option>Yelahanka</option><option>JP Nagar</option><option>HSR Layout</option>
+            </select>
+          </label>
+          <label>Budget
+            <select name="budget">
+              <option value="">Prefer to discuss</option>
+              <option value="50">Under ₹50 L</option><option value="80">₹50–80 L</option>
+              <option value="120">₹80 L–1.2 Cr</option><option value="200">₹1.2–2 Cr</option><option value="300">Above ₹2 Cr</option>
+            </select>
+          </label>
+        </div>
+        <div class="row">
+          <label>Property type
+            <select name="propertyType">
+              <option value="apartment">Apartment</option><option value="villa">Villa</option><option value="plot">Plot</option>
+            </select>
+          </label>
+          <label id="bhkField">Bedrooms
+            <select name="bhk"><option value="1">1 BHK</option><option value="2" selected>2 BHK</option><option value="3">3 BHK</option><option value="4">4 BHK</option></select>
+          </label>
+        </div>
+        <fieldset class="langs">
+          <legend>Call me in</legend>
+          <label><input type="radio" name="language" value="en" checked /> English</label>
+          <label><input type="radio" name="language" value="hi" /> हिन्दी</label>
+          <label><input type="radio" name="language" value="kn" /> ಕನ್ನಡ</label>
+        </fieldset>
+        <label class="consent"><input type="checkbox" name="consent" />
+          <span>I agree to receive a call and WhatsApp messages from <b class="firmName">Prime Nest Realty</b> about this enquiry. The first call may be made by an AI assistant.</span>
+        </label>
+        <p class="error" id="error" hidden></p>
+        <button type="submit" id="submit">Request a call back</button>
+      </form>
+    </section>
+
+    <section class="card done" id="done" hidden>
+      <div class="tick">✓</div>
+      <h2 id="doneTitle">Thank you!</h2>
+      <p id="doneText">Our assistant will call you in about a minute.</p>
+    </section>
+  </main>
+
+  <footer>Demo page for a fictional company, built for a client presentation. Property listings are sample data.</footer>
+  <script src="/enquire.js"></script>
+</body>
+</html>

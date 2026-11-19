@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lead Desk · AI Calling Agent</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%231f5f4a%22/></svg>" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">PN</div>
+      <div>
+        <div class="brand-name" id="firmName">Prime Nest Realty</div>
+        <div class="brand-sub">Lead Desk · AI Calling Agent</div>
+      </div>
+    </div>
+    <div class="top-actions">
+      <span class="chip" id="chipVapi" title="Vapi public key">Voice AI: …</span>
+      <span class="chip" id="chipHook" title="Public webhook URL (ngrok)">Webhook: …</span>
+      <label class="toggle" title="New leads from the capture page, Meta ads or the form are called automatically"><input type="checkbox" id="autoCall" checked /> Auto-call new leads</label>
+      <a class="btn" href="/enquire.html" target="_blank" title="Public enquiry page (also reachable on your ngrok URL)">Lead capture page ↗</a>
+      <button class="btn" id="btnReset" title="Restore the demo data">Reset demo</button>
+      <button class="btn primary" id="btnNewLead">+ New enquiry</button>
+    </div>
+  </header>
+
+  <section class="kpis">
+    <div class="kpi"><div class="kpi-label">Leads</div><div class="kpi-value" id="kTotal">0</div></div>
+    <div class="kpi"><div class="kpi-label">Called by AI</div><div class="kpi-value" id="kCalled">0</div></div>
+    <div class="kpi hot"><div class="kpi-label">Hot leads</div><div class="kpi-value" id="kHot">0</div></div>
+    <div class="kpi"><div class="kpi-label">Site visits booked</div><div class="kpi-value" id="kVisits">0</div></div>
+    <div class="kpi"><div class="kpi-label">Avg. speed to first call</div><div class="kpi-value" id="kSpeed">–</div></div>
+  </section>
+
+  <main class="layout">
+    <section class="card leads">
+      <div class="card-head">
+        <h2>Leads</h2>
+        <span class="muted">Click a lead to see details · newest first</span>
+      </div>
+      <table>
+        <thead><tr><th>Lead</th><th>Enquiry</th><th>Status</th><th>Score</th><th class="right">Action</th></tr></thead>
+        <tbody id="leadRows"></tbody>
+      </table>
+    </section>
+
+    <aside class="card detail" id="detail">
+      <div class="empty">Select a lead to view the call and qualification details.</div>
+    </aside>
+  </main>
+
+  <!-- New enquiry modal -->
+  <div class="modal" id="modal" hidden>
+    <form class="modal-box" id="leadForm">
+      <h3>New enquiry</h3>
+      <p class="muted">Simulates a lead arriving from a portal, ad or website form.</p>
+      <label>Name<input name="name" required placeholder="e.g. Priyanka Nair" /></label>
+      <label>Phone<input name="phone" placeholder="+91 9xxxx xxxxx" /></label>
+      <label>Source
+        <select name="source">
+          <option>Meta lead ad</option><option>99acres</option><option>MagicBricks</option>
+          <option>Housing.com</option><option>Website form</option><option>Google ads</option><option>Missed call</option>
+        </select>
+      </label>
+      <label>Enquiry<input name="enquiry" required placeholder="e.g. 3BHK in Hebbal, ready to move" /></label>
+      <label>Call language
+        <select name="language"><option value="en">English</option><option value="hi">Hindi (हिन्दी)</option><option value="kn">Kannada (ಕನ್ನಡ)</option></select>
+      </label>
+      <label class="check"><input type="checkbox" name="autocall" checked /> Call the lead automatically within seconds</label>
+      <div class="modal-actions">
+        <button type="button" class="btn" id="btnCancel">Cancel</button>
+        <button type="submit" class="btn primary">Add lead</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="toasts" id="toasts"></div>
+
+  <script src="/vendor/vapi.bundle.js"></script>
+  <script src="/simulate.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

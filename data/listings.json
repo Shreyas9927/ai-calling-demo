@@ -1,0 +1,14 @@
+[
+  { "id": "P101", "project": "Green Meadows Residency", "location": "Whitefield", "type": "apartment", "bhk": 2, "priceLakhs": 78, "sizeSqft": 1180, "possession": "Ready to move", "highlights": "5 min from ITPL, clubhouse, pool" },
+  { "id": "P102", "project": "Green Meadows Residency", "location": "Whitefield", "type": "apartment", "bhk": 3, "priceLakhs": 115, "sizeSqft": 1620, "possession": "Ready to move", "highlights": "East facing, 2 car parks" },
+  { "id": "P103", "project": "Lakeview Heights", "location": "Sarjapur Road", "type": "apartment", "bhk": 2, "priceLakhs": 72, "sizeSqft": 1110, "possession": "Dec 2027", "highlights": "Lake facing, near Wipro campus" },
+  { "id": "P104", "project": "Lakeview Heights", "location": "Sarjapur Road", "type": "apartment", "bhk": 3, "priceLakhs": 98, "sizeSqft": 1495, "possession": "Dec 2027", "highlights": "Pre-launch pricing, 10:90 payment plan" },
+  { "id": "P105", "project": "Orchid Villas", "location": "Sarjapur Road", "type": "villa", "bhk": 4, "priceLakhs": 285, "sizeSqft": 3200, "possession": "Ready to move", "highlights": "Gated villa community, private garden" },
+  { "id": "P106", "project": "Tech Park Homes", "location": "Electronic City", "type": "apartment", "bhk": 1, "priceLakhs": 38, "sizeSqft": 640, "possession": "Ready to move", "highlights": "Ideal for rental income, near Infosys" },
+  { "id": "P107", "project": "Tech Park Homes", "location": "Electronic City", "type": "apartment", "bhk": 2, "priceLakhs": 55, "sizeSqft": 1020, "possession": "Mar 2027", "highlights": "Metro line upcoming, budget friendly" },
+  { "id": "P108", "project": "Airport Greens", "location": "Hebbal", "type": "apartment", "bhk": 3, "priceLakhs": 145, "sizeSqft": 1750, "possession": "Ready to move", "highlights": "15 min to airport road, premium specs" },
+  { "id": "P109", "project": "Northern Plots Phase 2", "location": "Yelahanka", "type": "plot", "bhk": 0, "priceLakhs": 62, "sizeSqft": 1500, "possession": "Immediate registration", "highlights": "BMRDA approved, 30x50 plots" },
+  { "id": "P110", "project": "Sunrise Enclave", "location": "JP Nagar", "type": "apartment", "bhk": 2, "priceLakhs": 92, "sizeSqft": 1150, "possession": "Ready to move", "highlights": "Established neighbourhood, schools nearby" },
+  { "id": "P111", "project": "Sunrise Enclave", "location": "JP Nagar", "type": "apartment", "bhk": 3, "priceLakhs": 130, "sizeSqft": 1580, "possession": "Ready to move", "highlights": "Corner unit, metro 800m" },
+  { "id": "P112", "project": "HSR Urban Lofts", "location": "HSR Layout", "type": "apartment", "bhk": 2, "priceLakhs": 105, "sizeSqft": 1100, "possession": "Jun 2027", "highlights": "Startup hub, walk to 27th Main" }
+]

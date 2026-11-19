@@ -1,0 +1,21 @@
+{
+  "name": "ai-calling-demo",
+  "version": "1.0.0",
+  "description": "AI voice agent that calls and qualifies property leads (demo)",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "build:sdk": "esbuild scripts/vapi-entry.js --bundle --minify --format=iife --outfile=public/vendor/vapi.bundle.js",
+    "meta-lead": "node scripts/send-meta-lead.js"
+  },
+  "dependencies": {
+    "@vapi-ai/web": "^3.1.1",
+    "dotenv": "^18.0.10",
+    "express": "^4.22.3"
+  },
+  "private": true,
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
